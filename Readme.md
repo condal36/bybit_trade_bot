@@ -1,4 +1,4 @@
-"init_project"
+"A bybit api project"
 
 Target:auto postonly limit order, get market maker profit
 
