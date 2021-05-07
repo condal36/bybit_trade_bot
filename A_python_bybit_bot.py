@@ -7,6 +7,8 @@
 # @Software: PyCharm
 import bybit
 import time
+def time_report(i):
+    print(f"The bot has been start for {i} mins long")
 def SelndBuy(client,dis=100,qty=1):
     pricedata = client.Market.Market_symbolInfo().result()[0]
     Market_price = float(pricedata["result"][0]["last_price"])
@@ -32,5 +34,3 @@ if __name__=="__main__":
         SelndBuy(client)
         i = i + 1
         time.sleep(60)
-        if i == 7200:
-            exit()
