@@ -30,7 +30,7 @@ if __name__=="__main__":
     print(client.Symbol.Symbol_get().result()[0]["result"][0])
     i = 0
     while True:
-        time_report(i * 2.5)
         SelndBuy(client)
         i = i + 1
+        time_report(i)
         time.sleep(60)
